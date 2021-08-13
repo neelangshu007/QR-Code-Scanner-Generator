@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    style="@style/AppTheme.MaterialTheme"
+    tools:context=".GenerateQRCodeActivity">
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/frameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your Code Will Appear Here"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:elevation="1dp"
+            android:padding="4dp"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:id="@+id/QRCodeImg"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@color/white" />
+
+    </FrameLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:hint="Add text to get QR Code"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/QRCodeGeneratorBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_back"
+        android:text="Generate QR Code"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
