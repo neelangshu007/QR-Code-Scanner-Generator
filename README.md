@@ -39,4 +39,6 @@ This sample uses the Gradle build system. To build this project, use the
 ![](screenshots/ss5.jpeg)
 ![](screenshots/ss6.jpeg)
 ![](screenshots/ss7.jpeg)
+![](screenshots/ss8.jpeg)
+![](screenshots/ss9.jpeg)
 
